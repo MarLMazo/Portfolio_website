@@ -1,0 +1,65 @@
+body{
+    background-image: url("http://wordpress.mdmazo.com/wp-content/uploads/2020/06/mdmazo-media-scaled-e1591296779558.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#indexpage{
+    text-align: center;
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    color: #ffffff;
+}
+
+
+#indexpage > div{
+    position: relative;
+    top: calc(50% - 5vh);
+}
+h1{
+    font-size: 3em;
+}
+.main-line{
+    width: 50vw;
+    border-bottom: 5px solid #FFFFFF;
+    margin: auto;
+}
+
+.main-btn div{
+    display: inline-block;
+}
+
+.main-btn button{
+    color: #FFFFFF;
+    background-color: #FF9300;
+    font-size: 1.25em;
+    border: none;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.main-btn button:hover{
+    background-color: #FFFFFF;
+    color: #FF9300;
+}
+
+.index-container > *{
+    margin: 0.5em auto;
+}
+#homepage p{
+    font-size: 1.25em;
+}
+
+
+@media (max-width: 550px) {
+    .main-btn button{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 2em;
+    }
+
+}

@@ -1,0 +1,158 @@
+body{
+    background-image: url("http://wordpress.mdmazo.com/wp-content/uploads/2020/05/banner-e1591484911457.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#aboutpage{
+    color: #ffffff;
+}
+
+h3{
+    font-size: 1.25em;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 1em auto;
+}
+
+h1{
+    padding: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    color: #FFFFFF;
+}
+#aboutme{
+    margin: auto;
+    text-align: center;
+    width: 70vw;
+}
+
+.about-img-cont{
+    padding: 2em 0;
+    height: 300px;
+    width: 200px;
+    vertical-align: top;
+}
+
+.about-img-cont img{
+    width: 100%;
+
+}
+.author-details > div{
+    display: inline-block;
+    margin: 0 1em;
+
+}
+#author-about{
+    padding: 1em 0;
+    width: 50%;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+
+#skill{
+    padding: 1em;
+    margin: 1em 180px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.skill-goal, .skill-language{
+    vertical-align: top;
+    flex: 1 0 0;
+}
+
+.skill-list{
+    vertical-align: top;
+    display: inline-block;
+    width: 150px;
+}
+.icon i{
+    text-align: center;
+    font-size: 3em;
+    color: #FF9300;
+    transition: font-size;
+}
+
+.icon i:hover{
+    -webkit-animation:spin-scale 4s linear infinite;
+    animation: spin-scale 4s linear infinite;
+}
+
+
+.icon, h3, p{
+    margin: 1em 0;
+}
+
+h3{
+    text-align: center;
+}
+
+.skill-language ul{
+    text-align: left;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.skill-language ul li {
+    display: inline-block;
+    padding: 0.5em;
+}
+
+
+.skill-icons{
+    margin-right: 0.3em;
+    height: 32px;
+    width: 32px;
+}
+
+@-webkit-keyframes spin-scale {
+    50%{
+        transform: rotate(360deg) scale(1.8);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+@keyframes spin-scale {
+    50%{
+        transform: rotate(360deg) scale(1.8);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+
+@media (max-width: 1310px) {
+
+}
+@media (max-width: 790px) {
+
+    #skill{
+        font-size: 1em;
+        margin:1em 90px;
+    }
+    #author-about{
+        font-size: 1em;
+        width: auto;
+    }
+}
+
+@media (max-width: 690px) {
+
+    .icon i{
+        font-size: 2em;
+    }
+    #skill{
+        margin:1em 1em;
+        flex-flow: column wrap;
+    }
+
+}
+
