@@ -1,16 +1,4 @@
 "use strict";
-//Check if it input has value
-// $('.input').each(function(){
-//     $(this).on('blur', function(){
-//         //Any spacing will be trim and check if it has value or not
-//         if($(this).val().trim() !== "") {
-//             $(this).addClass('has-val');
-//         }
-//         else {
-//             $(this).removeClass('has-val');
-//         }
-//     })
-// })
 
 //Validate
 var input = $('.validate-input .input');
@@ -92,12 +80,14 @@ function validate (input) {
 
 //Function to add class to show errors
 function showValidate(input) {
+// Get the parent of the input field to add Class
     var thisAlert = $(input).parent();
     $(thisAlert).addClass('alert-validate');
 }
 
 //Function to remove the class that shows errors
 function hideValidate(input) {
+// Get the parent of the input field to remove Class
     var thisAlert = $(input).parent();
     $(thisAlert).removeClass('alert-validate');
 }
